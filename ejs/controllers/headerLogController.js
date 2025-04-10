@@ -1,6 +1,6 @@
 const headerLogController={
-    log: function(req, res) {
-        res.render('headerLogueado', {title: 'Header Logueado'});
+    headerlog: function(req, res) {
+        res.render('headerlog', {title: 'Header Logueado'});
 
     }
 }
