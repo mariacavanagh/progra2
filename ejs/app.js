@@ -38,6 +38,19 @@ app.use(function(req, res, next) {
     next(createError(404));
 });
 
+app.get('/registrarse', (req, res) => {
+    res.render('registracion'); // O un mensaje simple: res.send('Formulario recibido');
+  });
+
+app.get('/products-add', (req, res) => {
+    res.render('agregarProducto'); // O un mensaje simple: res.send('Formulario recibido');
+});
+
+app.get('/login', (req, res) => {
+res.render('inciSesion'); // O un mensaje simple: res.send('Formulario recibido');
+});
+  
+  
 // error handler
 app.use(function(err, req, res, next) {
     // set locals, only providing error in development
