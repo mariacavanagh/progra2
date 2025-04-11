@@ -1,10 +1,9 @@
 const data = {
     usuario: [
-        nombre:"Juan pablo Perez",
         email: "juan05@gmail.com",
-        contraseña:"1234",
-        fechaNacimiento:"12/04/99",
-        dni: 390683212,
+        usuario: "Juan Antonio Hierro",
+        contraseña:"Perr@123",
+        fechaNacimiento:"12/04/1999",
         fotoPerfil: "",
         createdAt: "",
         updatedAt: "",
