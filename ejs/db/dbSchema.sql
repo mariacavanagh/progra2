@@ -37,11 +37,11 @@ CREATE TABLE comentarios (
   FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
 INSERT INTO usuarios (email, usuario, contraseña, fechaNacimiento, dni, fotoPerfil) VALUES
-('ana@example.com', 'ana123', 'contraseña1', '1995-05-10', 12345678, 'img/perfiles/ana.jpg'),
-('juan@example.com', 'juanit0', 'contraseña2', '1992-08-23', 23456789, 'img/perfiles/juan.jpg'),
-('luisa@example.com', 'luisa_ok', 'contraseña3', '1998-12-01', 34567890, 'img/perfiles/luisa.jpg'),
-('marcos@example.com', 'markus', 'contraseña4', '1990-03-15', 45678901, 'img/perfiles/marcos.jpg'),
-('sofia@example.com', 'sofiii', 'contraseña5', '1997-07-07', 56789012, 'img/perfiles/sofia.jpg');
+('ana@gmail.com', 'ana123', 'contraseña1', '1995-05-10', 12345678, 'img/perfiles/ana.jpg'),
+('juan@gmail.com', 'juanit0', 'contraseña2', '1992-08-23', 23456789, 'img/perfiles/juan.jpg'),
+('luisa@gmail.com', 'luisa_ok', 'contraseña3', '1998-12-01', 34567890, 'img/perfiles/luisa.jpg'),
+('marcos@gmail.com', 'markus', 'contraseña4', '1990-03-15', 45678901, 'img/perfiles/marcos.jpg'),
+('sofia@gmail.com', 'sofiii', 'contraseña5', '1997-07-07', 56789012, 'img/perfiles/sofia.jpg');
 
 INSERT INTO productos (usuario_id, nombreArchivo, nombreProducto, descripcionProducto) VALUES
 (1, 'producto1.jpg', 'Taza Mágica', 'Taza que cambia de color con el calor'),
