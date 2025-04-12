@@ -10,6 +10,10 @@ const data = {
         deletedAt: null,
     ],
 
+    prductos:[
+
+    ]
+
 }
 
 module.exports = data;

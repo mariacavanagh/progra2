@@ -39,15 +39,15 @@ app.use(function(req, res, next) {
 });
 
 app.get('/registrarse', (req, res) => {
-    res.render('registracion'); // O un mensaje simple: res.send('Formulario recibido');
+    res.render('registracion'); 
   });
 
 app.get('/products-add', (req, res) => {
-    res.render('agregarProducto'); // O un mensaje simple: res.send('Formulario recibido');
+    res.render('agregarProducto'); 
 });
 
 app.get('/login', (req, res) => {
-res.render('inciSesion'); // O un mensaje simple: res.send('Formulario recibido');
+res.render('inciSesion'); ;
 });
   
   
