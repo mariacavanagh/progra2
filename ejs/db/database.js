@@ -1,5 +1,5 @@
 const data = {
-    usuario: [
+    usuario: { 
         email: "juan05@gmail.com",
         usuario: "Juan Antonio Hierro",
         contraseña:"Perr@123",
@@ -8,11 +8,11 @@ const data = {
         createdAt: "",
         updatedAt: "",
         deletedAt: null,
-    ],
+    },
 
-    prductos:[
-
-    ]
+    prductos: {
+        
+    }
 
 }
 

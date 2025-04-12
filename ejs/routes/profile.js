@@ -1,6 +1,6 @@
 const express = require('express');
 var router = express.Router();
-const profileController = require('../controllers/profileController');
+const profileController = require('../controllers/headerLogController');
 
 router.get('/', profileController.profile);
 

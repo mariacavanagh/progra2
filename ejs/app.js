@@ -11,6 +11,7 @@ const headerlogRouter = require('./routes/headerLog');
 const productRouter = require('./routes/product');
 const profileRouter = require('./routes/profile');
 const registerRouter = require('./routes/register');
+const searchRouter = require('./routes/search');
 
 
 var app = express();
@@ -33,6 +34,7 @@ app.use('/headerlog', headerlogRouter);
 app.use('/product', productRouter);
 app.use('/profile', profileRouter);
 app.use('/register', registerRouter);
+app.use('/search', searchRouter);
 
 app.use(function(req, res, next) {
     next(createError(404));
@@ -42,7 +44,7 @@ app.get('/registrarse', (req, res) => {
     res.render('registracion'); 
   });
 
-app.get('/products-add', (req, res) => {
+app.get('/product/add', (req, res) => {
     res.render('agregarProducto'); 
 });
 
