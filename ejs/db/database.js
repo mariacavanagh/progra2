@@ -55,6 +55,10 @@ const data = {
             { id: 1, usuario_id: 1, nombreArchivo: 'producto1.jpg', nombreProducto: 'Taza Mágica', descripcionProducto: 'Taza que cambia de color con el calor' },
             { id: 2, usuario_id: 1, nombreArchivo: 'producto2.jpg', nombreProducto: 'Cuaderno A5', descripcionProducto: 'Cuaderno artesanal con hojas recicladas' },
             { id: 3, usuario_id: 2, nombreArchivo: 'producto3.jpg', nombreProducto: 'Llavero 3D', descripcionProducto: 'Llavero impreso en 3D personalizado' },
+            { id: 4, usuario_id: 2, nombreArchivo: 'producto4.jpg', nombreProducto: 'Cartera de cuero', descripcionProducto: 'Hecha a mano con cuero ecológico' },
+            { id: 5, usuario_id: 3, nombreArchivo: 'producto5.jpg', nombreProducto: 'Almohada ergonómica', descripcionProducto: 'Ideal para dormir mejor' },
+            { id: 6, usuario_id: 3, nombreArchivo: 'producto6.jpg', nombreProducto: 'Poster vintage', descripcionProducto: 'Estilo retro para decoración' },
+        ]
     }
 
 }
