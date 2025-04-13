@@ -19,7 +19,7 @@ const data = {
         contraseña: 'contraseña1',
         fechaNacimiento: '1995-05-10',
         dni: 12345678,
-        fotoPerfil: 'img/perfiles/ana.jpg'
+        fotoPerfil: ''
       },
       {
         id: 3,
@@ -28,7 +28,7 @@ const data = {
         contraseña: 'contraseña3',
         fechaNacimiento: '1998-12-01',
         dni: 34567890,
-        fotoPerfil: 'img/perfiles/luisa.jpg'
+        fotoPerfil: ''
       },
       {
         id: 4,
@@ -37,7 +37,7 @@ const data = {
         contraseña: 'contraseña4',
         fechaNacimiento: '1990-03-15',
         dni: 45678901,
-        fotoPerfil: 'img/perfiles/marcos.jpg'
+        fotoPerfil: ''
       },
       {
         id: 5,
@@ -46,19 +46,20 @@ const data = {
         contraseña: 'contraseña5',
         fechaNacimiento: '1997-07-07',
         dni: 56789012,
-        fotoPerfil: 'img/perfiles/sofia.jpg'
+        fotoPerfil: ''
       }
     ],
 
     productos: [
-        { id: 1, usuario_id: 1, nombreArchivo: 'producto1.jpg', nombreProducto: 'Taza Mágica', descripcionProducto: 'Taza que cambia de color con el calor' },
-        { id: 2, usuario_id: 1, nombreArchivo: 'producto2.jpg', nombreProducto: 'Cuaderno A5', descripcionProducto: 'Cuaderno artesanal con hojas recicladas' },
-        { id: 3, usuario_id: 2, nombreArchivo: 'producto3.jpg', nombreProducto: 'Llavero 3D', descripcionProducto: 'Llavero impreso en 3D personalizado' },
-        { id: 4, usuario_id: 2, nombreArchivo: 'producto4.jpg', nombreProducto: 'Cartera de cuero', descripcionProducto: 'Hecha a mano con cuero ecológico' },
-        { id: 5, usuario_id: 3, nombreArchivo: 'producto5.jpg', nombreProducto: 'Almohada ergonómica', descripcionProducto: 'Ideal para dormir mejor' },
-        { id: 6, usuario_id: 3, nombreArchivo: 'producto6.jpg', nombreProducto: 'Poster vintage', descripcionProducto: 'Estilo retro para decoración' },{ id: 7, usuario_id: 4, nombreArchivo: 'producto7.jpg', nombreProducto: 'Kit de jardinería', descripcionProducto: 'Todo para tus plantas en casa' },
-        { id: 8, usuario_id: 4, nombreArchivo: 'producto8.jpg', nombreProducto: 'Termo de acero', descripcionProducto: 'Mantiene el calor por 12 horas' },
-        { id: 9, usuario_id: 5, nombreArchivo: 'producto9.jpg', nombreProducto: 'Portarretratos digital', descripcionProducto: 'Con pantalla táctil de 7 pulgadas' },
+        { id: 1, usuario_id: 1, nombreArchivo: 'producto1.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 2, usuario_id: 1, nombreArchivo: 'producto2.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 3, usuario_id: 2, nombreArchivo: 'producto3.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 4, usuario_id: 2, nombreArchivo: 'producto4.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 5, usuario_id: 3, nombreArchivo: 'producto5.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 6, usuario_id: 3, nombreArchivo: 'producto6.jpg', nombreProducto: '', descripcionProducto: 'Estilo retro para decoración' },
+        { id: 7, usuario_id: 4, nombreArchivo: 'producto7.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 8, usuario_id: 4, nombreArchivo: 'producto8.jpg', nombreProducto: '', descripcionProducto: '' },
+        { id: 9, usuario_id: 5, nombreArchivo: 'producto9.jpg', nombreProducto: '', descripcionProducto: 's' },
         { id: 10, usuario_id: 5, nombreArchivo: 'producto10.jpg', nombreProducto: 'Auriculares Bluetooth', descripcionProducto: 'Con cancelación de ruido' }
       ],
         
