@@ -57,9 +57,15 @@ const data = {
             { id: 3, usuario_id: 2, nombreArchivo: 'producto3.jpg', nombreProducto: 'Llavero 3D', descripcionProducto: 'Llavero impreso en 3D personalizado' },
             { id: 4, usuario_id: 2, nombreArchivo: 'producto4.jpg', nombreProducto: 'Cartera de cuero', descripcionProducto: 'Hecha a mano con cuero ecológico' },
             { id: 5, usuario_id: 3, nombreArchivo: 'producto5.jpg', nombreProducto: 'Almohada ergonómica', descripcionProducto: 'Ideal para dormir mejor' },
-            { id: 6, usuario_id: 3, nombreArchivo: 'producto6.jpg', nombreProducto: 'Poster vintage', descripcionProducto: 'Estilo retro para decoración' },
-        ]
-    }
+            { id: 6, usuario_id: 3, nombreArchivo: 'producto6.jpg', nombreProducto: 'Poster vintage', descripcionProducto: 'Estilo retro para decoración' },{ id: 7, usuario_id: 4, nombreArchivo: 'producto7.jpg', nombreProducto: 'Kit de jardinería', descripcionProducto: 'Todo para tus plantas en casa' },
+            { id: 8, usuario_id: 4, nombreArchivo: 'producto8.jpg', nombreProducto: 'Termo de acero', descripcionProducto: 'Mantiene el calor por 12 horas' },
+            { id: 9, usuario_id: 5, nombreArchivo: 'producto9.jpg', nombreProducto: 'Portarretratos digital', descripcionProducto: 'Con pantalla táctil de 7 pulgadas' },
+            { id: 10, usuario_id: 5, nombreArchivo: 'producto10.jpg', nombreProducto: 'Auriculares Bluetooth', descripcionProducto: 'Con cancelación de ruido' }
+          ],
+        
+          comentarios: [
+            
+          ]
 
 }
 
