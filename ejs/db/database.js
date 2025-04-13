@@ -5,7 +5,7 @@ const data = {
         usuario: "Juan Antonio Hierro",
         contraseña:"Perr@123",
         fechaNacimiento:"12/04/1999",
-        fotoPerfil: "",
+        fotoPerfil: "/images/fotodePerfil.jpg",
         createdAt: "",
         updatedAt: "",
         deletedAt: null,
