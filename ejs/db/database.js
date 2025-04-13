@@ -23,14 +23,31 @@ const data = {
       },
       {
         id: 3,
-        email: 'luisa@example.com',
+        email: 'luisa@gmail.com',
         usuario: 'luisa_ok',
         contraseña: 'contraseña3',
         fechaNacimiento: '1998-12-01',
         dni: 34567890,
         fotoPerfil: 'img/perfiles/luisa.jpg'
       },
-      
+      {
+        id: 4,
+        email: 'marcos@gmail.com',
+        usuario: 'markus',
+        contraseña: 'contraseña4',
+        fechaNacimiento: '1990-03-15',
+        dni: 45678901,
+        fotoPerfil: 'img/perfiles/marcos.jpg'
+      },
+      {
+        id: 5,
+        email: 'sofia@gmail.com',
+        usuario: 'sofiii',
+        contraseña: 'contraseña5',
+        fechaNacimiento: '1997-07-07',
+        dni: 56789012,
+        fotoPerfil: 'img/perfiles/sofia.jpg'
+      }
     ],
 
     productos: {
