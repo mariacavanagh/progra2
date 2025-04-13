@@ -51,7 +51,10 @@ const data = {
     ],
 
     productos: {
-        
+        productos: [
+            { id: 1, usuario_id: 1, nombreArchivo: 'producto1.jpg', nombreProducto: 'Taza Mágica', descripcionProducto: 'Taza que cambia de color con el calor' },
+            { id: 2, usuario_id: 1, nombreArchivo: 'producto2.jpg', nombreProducto: 'Cuaderno A5', descripcionProducto: 'Cuaderno artesanal con hojas recicladas' },
+            { id: 3, usuario_id: 2, nombreArchivo: 'producto3.jpg', nombreProducto: 'Llavero 3D', descripcionProducto: 'Llavero impreso en 3D personalizado' },
     }
 
 }
