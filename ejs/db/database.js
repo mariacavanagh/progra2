@@ -12,7 +12,6 @@ const data = {
         updatedAt: "",
         deletedAt: null,
     },
-
     prductos: {
         
     }
