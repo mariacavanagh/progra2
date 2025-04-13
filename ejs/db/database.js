@@ -1,6 +1,6 @@
 
 const data = {
-    usuario: 
+    usuario: [
     { 
         id: 1,
         email: "juan05@gmail.com",
@@ -12,7 +12,28 @@ const data = {
         updatedAt: "",
         deletedAt: null,
     },
-    prductos: {
+    {
+        id: 2,
+        email: 'ana@gmail.com',
+        usuario: 'ana123',
+        contraseña: 'contraseña1',
+        fechaNacimiento: '1995-05-10',
+        dni: 12345678,
+        fotoPerfil: 'img/perfiles/ana.jpg'
+      },
+      {
+        id: 3,
+        email: 'luisa@example.com',
+        usuario: 'luisa_ok',
+        contraseña: 'contraseña3',
+        fechaNacimiento: '1998-12-01',
+        dni: 34567890,
+        fotoPerfil: 'img/perfiles/luisa.jpg'
+      },
+      
+    ],
+
+    productos: {
         
     }
 
