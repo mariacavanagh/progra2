@@ -145,89 +145,23 @@ const data = {
             ]
         },
         {
-            nombre: "Samsung galaxy",
-            descripcion: "Telefono celular de Samsung con disponjibilidad a 5G",
+            nombre: "Samsung galaky",
+            descripcion: "Cargador inalambrico",
             imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
-                    comentario: "Buena camara",
+                    comentario: "No mas cables rotos.",
                     imagen: "ejs/public/images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "juanHierro",
-                    comentario: "Mejor bateria.",
+                    comentario: "Eficiente.",
                     imagen: "/images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
-                    comentario: "Muy lindos los colores",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-            ]
-        },
-        {
-            nombre: "Lavarropas Samsung",
-            descripcion: "Lavarropas marca samsung de alta calidad",
-            imagen: "ejs/public/images/products/lavarropas_2_800x800.jpg",
-            comentarios: [
-                {
-                    nombre: "ana123",
-                    comentario: "Limpia en menos de 20 minutos es increible",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "sofiii",
-                    comentario: "Muy facil de elejir los modo de limepieza.",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "markus",
-                    comentario: "Se rompio y la pieza para arreglarla es casi inconseguible no recomiendo.",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-            ]
-        },
-        {
-            nombre: "Samsung Fridge",
-            descripcion: "Heladera inteligente de Samsung con manejo por bluetooth.",
-            imagen: "ejs/public/images/products/samsung-nevera_800x800.jpg",
-            comentarios: [
-                {
-                    nombre: "ana123",
-                    comentario: "Manejo la temperatura desde mi telefono :)",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "juanHierro",
-                    comentario: "Comentando desde la misma heladera es increible",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "luisa_ok",
-                    comentario: "Mucho espacion para las verduras.",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-            ]
-        },
-        {
-            nombre: "Ninja Airfryer",
-            descripcion: "Freidora de aire marca Ninja.",
-            imagen: "ejs/public/images/products/ninja_airfryer_800x800.jpg",
-            comentarios: [
-                {
-                    nombre: "ana123",
-                    comentario: "Muchos modos y recetas para explorar.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "sofiii",
-                    comentario: "No cocino mas comidas con acietes.",
-                    imagen: "/images/fotodePerfil.jpg"
-                },
-                {
-                    nombre: "luisa_ok",
-                    comentario: "Lavarla se hace muy complicado.",
+                    comentario: "Facil de usar.",
                     imagen: "/images/fotodePerfil.jpg"
                 },
             ]
