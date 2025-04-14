@@ -6,7 +6,8 @@ const productController= {
     },
     productadd: function(req, res) {
         res.render('productadd', {
-            usuario: database.usuario
+            usuario: database.usuario,
+            productos: database.productos
         });
     }
 }

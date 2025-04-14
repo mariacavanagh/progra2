@@ -8,7 +8,8 @@ const headerLogController={
     },
     profile: function(req, res) {
         res.render('profile', {
-            usuario: database.usuario
+            usuario: database.usuario,
+            productos: database.productos
         });
     },
     productadd: function(req, res) {
