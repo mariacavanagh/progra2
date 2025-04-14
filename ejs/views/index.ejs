@@ -29,9 +29,10 @@
 							<article class="product-box_data">
 								<h2><%= productos[i].nombre %></h2>
 								<p><%= productos[i].descripcion %></p>
-								<% for (let a = 0; a < productos[i].comentarios.length; a++) { %>
-									<p><%= productos[i].comentarios[a].comentario %></p>
-								<%} %>
+								<p>
+									comentarios: <%= productos[i].comentarios.length%>
+								</p>
+								
 							</article>
 						</a>
 					</section>
