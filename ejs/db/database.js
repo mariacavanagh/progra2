@@ -11,15 +11,26 @@ const data = {
 
     productos: [
         {
-            nombre: "tele",
+            nombre: "Tv Samsung Smart",
             descripcion: "es muy buena",
-            imagen: "/images/tele.png",
+            imagen: "ejs/public/images/products/img-tv-samsung-smart.jpg",
             comentarios: [
                 {
-                    nombre: "juan",
-                    comentario: "me gusto mucho",
-                    imagen: "/imagenes/users/usuario1.png"
-                }
+                    nombre: "Juan",
+                    comentario: "Me gusto mucho.",
+                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                },
+                {
+                    nombre: "Ana",
+                    comentario: "Muy utíl.",
+                    imagen: "/images/fotodePerfil.jpg"
+                },
+                {
+                    nombre: "Luisa",
+                    comentario: "Tan buena.",
+                    imagen: "/images/fotodePerfil.jpg"
+                },
+
             ]
         },
     

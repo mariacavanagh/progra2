@@ -44,7 +44,7 @@ INSERT INTO usuarios (email, usuario, contraseña, fechaNacimiento, dni, fotoPer
 ('sofia@gmail.com', 'sofiii', 'contraseña5', '1997-07-07', 56789012, '');
 
 INSERT INTO productos (usuario_id, nombreArchivo, nombreProducto, descripcionProducto) VALUES
-(1, 'producto1.jpg', '', ''),
+(1, '/images/products/img-tv-samsung-smart.jpg', '', ''),
 (1, 'producto2.jpg', '', ''),
 (2, 'producto3.jpg', '', ''),
 (2, 'producto4.jpg', '', ''),
