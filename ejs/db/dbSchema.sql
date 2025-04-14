@@ -37,7 +37,7 @@ CREATE TABLE comentarios (
   FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
 INSERT INTO usuarios (email, usuario, contraseña, fechaNacimiento, dni, fotoPerfil) VALUES
-('juan05@gmail.com', 'juanHierro', 'contraseña2', '1999-04-12', 23456789, '/images/fotodePerfil.jpg'),
+('juan05@gmail.com', 'juanHierro', 'contraseña2', '1999-04-12', 23456789, ''),
 ('ana@gmail.com', 'ana123', 'contraseña1', '1995-05-10', 12345678, ''),
 ('luisa@gmail.com', 'luisa_ok', 'contraseña3', '1998-12-01', 34567890, ''),
 ('marcos@gmail.com', 'markus', 'contraseña4', '1990-03-15', 45678901, ''),
@@ -53,7 +53,7 @@ INSERT INTO productos (usuario_id, nombreArchivo, nombreProducto, descripcionPro
 (4, 'producto7.jpg', '', ''),
 (4, 'producto8.jpg', '', ''),
 (5, 'producto9.jpg', '', ''),
-(5, 'producto10.jpg', 'Auriculares Bluetooth', 'Con cancelación de ruido');
+(5, 'producto10.jpg', '', '');
 
 INSERT INTO comentarios (producto_id, usuario_id, textoComentario) VALUES
 (1, 2, ''),
