@@ -51,6 +51,8 @@ app.get('/product/add', (req, res) => {
 app.get('/login', (req, res) => {
 res.render('inciSesion'); ;
 });
+
+
   
   
 // error handler
