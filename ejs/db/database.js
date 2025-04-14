@@ -145,6 +145,7 @@ const data = {
             ]
         },
         {
+<<<<<<< HEAD
             nombre: "Samsung galaxy",
             descripcion: "Telefono celular de Samsung con disponjibilidad a 5G",
             imagen: "images/products/img-samsung-galaxy-s10.jpg",
@@ -153,14 +154,25 @@ const data = {
                     nombre: "ana123",
                     comentario: "Buena camara",
                     imagen: "images/fotodePerfil.jpg"
+=======
+            nombre: "Samsung galaky",
+            descripcion: "Cargador inalambrico",
+            imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
+            comentarios: [
+                {
+                    nombre: "ana123",
+                    comentario: "No mas cables rotos.",
+                    imagen: "ejs/public/images/fotodePerfil.jpg"
+>>>>>>> 3e4f5cfcb013dc6dd73ef11ccd6898ffab3040e7
                 },
                 {
                     nombre: "juanHierro",
-                    comentario: "Mejor bateria.",
+                    comentario: "Eficiente.",
                     imagen: "/images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
+<<<<<<< HEAD
                     comentario: "Muy lindos los colores",
                     imagen: "/images/fotodePerfil.jpg"
                 },
@@ -228,6 +240,9 @@ const data = {
                 {
                     nombre: "luisa_ok",
                     comentario: "Lavarla se hace muy complicado.",
+=======
+                    comentario: "Facil de usar.",
+>>>>>>> 3e4f5cfcb013dc6dd73ef11ccd6898ffab3040e7
                     imagen: "/images/fotodePerfil.jpg"
                 },
             ]

@@ -10,7 +10,23 @@
   --gray: #666666;
   --light-gray: #ebebeb;
   --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif
+  --heading-font-family: "Raleway", sans-serif;
+  --base-font-family: "Open Sans", sans-serif;
+  --title-font-family: "Orbitron", sans-serif;
+}
+
+.tituloprinc{
+  font-family: var(--title-font-family);
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 0 0 20px rgb(69, 212, 212);
+}
+
+h1, h2, .products-title , .product-detail-title , .main-title, footer-data h2{
+  font-family: var(--heading-font-family);
 }
 
 
@@ -42,7 +58,7 @@ ol {
 a {
   display: inline-block;
   text-decoration: none;
-  color: inherit;
+  color: var(--dark-blue);
 }
 
 figure {
@@ -68,13 +84,14 @@ hr {
 /*====== Main Header ======*/
 .main-header {
   padding: 15px 0;
-  background-color: var(--yellow);
+  background-color: rgb(66, 118, 177);
 }
 
 .main-header_home-link,
 .main-header_credit-link {
   display: block;
 }
+
 
 .main-header_credit-link {
   font-size: 1.5em;
@@ -159,6 +176,7 @@ hr {
   background-size: cover;
   background-position: center center;
   height: 100px;
+  
 }
 
 

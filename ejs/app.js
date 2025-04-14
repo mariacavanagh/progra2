@@ -44,14 +44,15 @@ app.get('/registrarse', (req, res) => {
     res.render('registracion'); 
   });
 
-app.get('/product/add', (req, res) => {
-    res.render('agregarProducto'); 
-});
+
 
 app.get('/login', (req, res) => {
 res.render('inciSesion'); ;
 });
 
+app.get('/product/add', (req, res) => {
+  res.render('agregarProducto'); 
+});
 
   
   
