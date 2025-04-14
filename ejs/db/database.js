@@ -13,12 +13,12 @@ const data = {
         {
             nombre: "Tv Samsung Smart",
             descripcion: "es muy buena",
-            imagen: "ejs/public/images/products/img-samsung-galaxy-s10.jpg",
+            imagen: "/images/products/img-samsung-galaxy-s10.jpg",
             comentarios: [
                 {
                     nombre: "juanHierro",
                     comentario: "Me gusto mucho.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "ana123",
@@ -35,13 +35,13 @@ const data = {
         {
             nombre: "Irobot Roomba",
             descripcion: "Aspirador automata",
-            imagen: "ejs/public/images/products/02dee987-233b-4e0c-8464-b2bc86483fe7.jpg",
+            imagen: "images/products/02dee987-233b-4e0c-8464-b2bc86483fe7.jpg",
 
             comentarios: [
                 {
                     nombre: "sofiii",
                     comentario: "Ni un ruido.",
-                   imagen: "ejs/public/images/fotodePerfil.jpg"
+                   imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
@@ -59,12 +59,12 @@ const data = {
         {
             nombre: "Magsafe charger",
             descripcion: "Cargador inalambrico",
-            imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
+            imagen: "images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
             comentarios: [
                 {
                     nombre: "juanHierro",
                     comentario: "No mas cables rotos.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
@@ -81,12 +81,12 @@ const data = {
         {
             nombre: "Mouse argonomico",
             descripcion: "Mouse para largas sesiones en la computadora con la mejor comodidad.",
-            imagen: "ejs/public/images/products/76e8e952-9a85-4db6-826a-f6f6a604891c.jpg",
+            imagen: "images/products/76e8e952-9a85-4db6-826a-f6f6a604891c.jpg",
             comentarios: [
                 {
                     nombre: "sofiii",
                     comentario: "Con este mouse mi mano toco el cielo, muy comodo.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
@@ -103,12 +103,12 @@ const data = {
         {
             nombre: "Airpods 3 generación",
             descripcion: "Auriculares de inalambricos de Apple.",
-            imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
+            imagen: "images/products/52225ff7-ce12-4587-858e-a85090d931e0.jpg",
             comentarios: [
                 {
                     nombre: "sofiii",
                     comentario: "En el tren, bondi y en cualquier lugar, son infaltables.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "markus",
@@ -125,12 +125,12 @@ const data = {
         {
             nombre: "Macbook Airpro",
             descripcion: "Laptop carismatica de Apple.",
-            imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
+            imagen: "images/products/img-macbook-pro-2019.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
                     comentario: "Muy bueno el procesamiento.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "sofiii",
@@ -147,12 +147,12 @@ const data = {
         {
             nombre: "Samsung galaxy",
             descripcion: "Telefono celular de Samsung con disponjibilidad a 5G",
-            imagen: "ejs/public/images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg",
+            imagen: "images/products/img-samsung-galaxy-s10.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
                     comentario: "Buena camara",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "juanHierro",
@@ -169,12 +169,12 @@ const data = {
         {
             nombre: "Lavarropas Samsung",
             descripcion: "Lavarropas marca samsung de alta calidad",
-            imagen: "ejs/public/images/products/lavarropas_2_800x800.jpg",
+            imagen: "images/products/lavarropas_2_800x800.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
                     comentario: "Limpia en menos de 20 minutos es increible",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "sofiii",
@@ -191,12 +191,12 @@ const data = {
         {
             nombre: "Samsung Fridge",
             descripcion: "Heladera inteligente de Samsung con manejo por bluetooth.",
-            imagen: "ejs/public/images/products/samsung-nevera_800x800.jpg",
+            imagen: "images/products/samsung-nevera_800x800.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
                     comentario: "Manejo la temperatura desde mi telefono :)",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/fotodePerfil.jpg"
                 },
                 {
                     nombre: "juanHierro",
@@ -213,7 +213,7 @@ const data = {
         {
             nombre: "Ninja Airfryer",
             descripcion: "Freidora de aire marca Ninja.",
-            imagen: "ejs/public/images/products/ninja_airfryer_800x800.jpg",
+            imagen: "images/products/ninja_airfryer_800x800.jpg",
             comentarios: [
                 {
                     nombre: "ana123",
