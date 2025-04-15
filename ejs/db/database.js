@@ -147,7 +147,7 @@ const data = {
         {
             nombre: "Samsung galaxy",
             descripcion: "Telefono celular de Samsung con disponjibilidad a 5G",
-            imagen: "images/products/img-samsung-galaxy-s10.jpg",
+            imagen: "images/products/img-cafetera-moulinex.jpg",
             comentarios: [
                 {
                     nombre: "ana123",

@@ -1,5 +1,5 @@
 /*====== Fonts ======*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
 
 /*====== Variables ======*/
@@ -25,7 +25,7 @@
   text-shadow: 0 0 20px rgb(69, 212, 212);
 }
 
-h1, h2, .products-title , .product-detail-title , .main-title, footer-data h2{
+h1, h2, .products-title , .product-detail-title , .main-title, .footer-data h2{
   font-family: var(--heading-font-family);
 }
 
