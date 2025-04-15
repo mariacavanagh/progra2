@@ -15,15 +15,15 @@
 		<div class="d-flex align-items-center">
 			<h2 class="products-title"> <%= product.nombre %> </h2> 
 			<p class="product-detail-description">
-				<a href="/product">Editar</a>
+				<a href="/product/add">Editar</a>
 			</p>
 		</div>
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="/images/products/<%= product.imagen %>" alt="" class="product-detail-img">
+					<img src="<%= product.imagen %>" alt="" class="product-detail-img">
 					<p class="product-detail-description">
-					<%= product.descripcion %>	
+					Descripción: <%= product.descripcion %>	
 					</p>
 				</article>
 				<div class="col-12 col-lg-4">

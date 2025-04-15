@@ -25,8 +25,11 @@
 							<i class="fas fa-cog"></i>
 						</a>
 					</h1>
-					<p class="usuario-email"><%= usuario.email %> </p>
+					
 					<a class="btn mt-3 ml-4" href="">SEGUIR</a>
+				</div>
+				<div class="mail">
+					<p class="usuario-email"><%= usuario.email %> </p>
 				</div>
 				<div>
 					<ul class="">
@@ -58,7 +61,7 @@
 						</figure>
 						<article class="product-box_data">
 							<h2><%= productos[i].nombre %></h2>
-							<p><%= productos[i].descripcion %></p>
+							<p>Descrpción: <%= productos[i].descripcion %></p>
 							<% for (let a = 0; a < productos[i].comentarios.length; a++) { %>
 								<p><%= productos[i].comentarios[a].comentario %></p>
 							<%} %>
