@@ -37,11 +37,11 @@ CREATE TABLE comentarios (
   FOREIGN KEY (producto_id) REFERENCES productos(id)
 );
 INSERT INTO usuarios (email, usuario, contraseña, fechaNacimiento, dni, fotoPerfil) VALUES
-('juan05@gmail.com', 'juanHierro', 'contraseña2', '1999-04-12', 23456789, ''),
-('ana@gmail.com', 'ana123', 'contraseña1', '1995-05-10', 12345678, ''),
-('luisa@gmail.com', 'luisa_ok', 'contraseña3', '1998-12-01', 34567890, ''),
-('marcos@gmail.com', 'markus', 'contraseña4', '1990-03-15', 45678901, ''),
-('sofia@gmail.com', 'sofiii', 'contraseña5', '1997-07-07', 56789012, '');
+('juan05@gmail.com', 'juanHierro', 'contraseña2', '1999-04-12', 23456789, 'images/fotodePerfil.jpg'),
+('ana@gmail.com', 'ana123', 'contraseña1', '1995-05-10', 12345678, 'images/users/anaaaa.jpg'),
+('luisa@gmail.com', 'luisa_ok', 'contraseña3', '1998-12-01', 34567890, 'images/users/luisa.jpg'),
+('marcos@gmail.com', 'markus', 'contraseña4', '1990-03-15', 45678901, '/images/users/marcos.jpg'),
+('sofia@gmail.com', 'sofiii', 'contraseña5', '1997-07-07', 56789012, 'images/users/sofiiaaa.jpg');
 
 INSERT INTO productos (nombre, descripcion, imagen) VALUES
 ('images/products/img-tv-samsung-smart.jpg','Tv Samsung Smart', 'es muy buena'),

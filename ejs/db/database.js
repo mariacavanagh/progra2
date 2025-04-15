@@ -23,12 +23,12 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Muy utíl.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "luisa_ok",
                     comentario: "Tan buena.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/luisa.jpg"
                 }
             ]
         },
@@ -41,17 +41,17 @@ const data = {
                 {
                     nombre: "sofiii",
                     comentario: "Ni un ruido.",
-                   imagen: "images/fotodePerfil.jpg"
+                   imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "markus",
                     comentario: "Limpio mi cuarto en 2 minutos.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
                 {
                     nombre: "ana123",
                     comentario: "A mi perros no les gusta :(",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 }
             ]
         },
@@ -69,12 +69,12 @@ const data = {
                 {
                     nombre: "markus",
                     comentario: "Eficiente.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
                 {
                     nombre: "luisa_ok",
                     comentario: "Facil de usar.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/luisa.jpg"
                 },
             ]
         },
@@ -86,17 +86,17 @@ const data = {
                 {
                     nombre: "sofiii",
                     comentario: "Con este mouse mi mano toco el cielo, muy comodo.",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "markus",
                     comentario: "Muy bueno para mi trabajo como diseñador.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
                 {
                     nombre: "ana123",
                     comentario: "Lo use como por 3 horas seguidas y no senti incomada mi mano 10/10.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
             ]
         },
@@ -108,17 +108,17 @@ const data = {
                 {
                     nombre: "sofiii",
                     comentario: "En el tren, bondi y en cualquier lugar, son infaltables.",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "markus",
                     comentario: "Aguante Cerati, estos auris le hacen justicia.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
                 {
                     nombre: "luisa_ok",
                     comentario: "Los bajos suenan increible",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/luisa.jpg"
                 },
             ]
         },
@@ -130,12 +130,12 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Muy bueno el procesamiento.",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "sofiii",
                     comentario: "Apple > cauqluier compu.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "juanHierro",
@@ -152,7 +152,7 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Buena camara",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "juanHierro",
@@ -162,7 +162,7 @@ const data = {
                 {
                     nombre: "markus",
                     comentario: "Muy lindos los colores",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
             ]
         },
@@ -174,17 +174,17 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Limpia en menos de 20 minutos es increible",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "sofiii",
                     comentario: "Muy facil de elejir los modo de limepieza.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "markus",
                     comentario: "Se rompio y la pieza para arreglarla es casi inconseguible no recomiendo.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "/images/users/marcos.jpg"
                 },
             ]
         },
@@ -196,7 +196,7 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Manejo la temperatura desde mi telefono :)",
-                    imagen: "images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "juanHierro",
@@ -206,7 +206,7 @@ const data = {
                 {
                     nombre: "luisa_ok",
                     comentario: "Mucho espacion para las verduras.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/luisa.jpg"
                 },
             ]
         },
@@ -218,18 +218,18 @@ const data = {
                 {
                     nombre: "ana123",
                     comentario: "Muchos modos y recetas para explorar.",
-                    imagen: "ejs/public/images/fotodePerfil.jpg"
+                    imagen: "images/users/anaaaa.jpg"
                 },
                 {
                     nombre: "sofiii",
                     comentario: "No cocino mas comidas con acietes.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/sofiiaaa.jpg"
                 },
                 {
                     nombre: "luisa_ok",
                     comentario: "Lavarla se hace muy complicado.",
                     comentario: "Facil de usar.",
-                    imagen: "/images/fotodePerfil.jpg"
+                    imagen: "images/users/luisa.jpg"
                 },
             ]
         },
