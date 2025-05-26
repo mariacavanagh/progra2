@@ -7,17 +7,17 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER.UNISIGNED
 
         },
-        usuario_id: {
+        usuarioId: {
             type: dataTypes.INTEGER.UNISIGNED
         },
-        imagen_producto:{
-            type: dataTypes.INTEGER.UNISIGNED,
-        },
-        nombre: {
+        nombreArchivo:{
             type: dataTypes.STRING(255),
         },
-        descripcion: {
-            type: dataTypes.STRING(255)
+        nombreProducto: {
+            type: dataTypes.STRING(255),
+        },
+        descripcionProducto: {
+            type: dataTypes.STRING
         },
     };
     let config = {

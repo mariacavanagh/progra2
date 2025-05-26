@@ -7,16 +7,14 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER.UNISIGNED
 
         },
-        post_id: {
+        productoId: {
             type: dataTypes.INTEGER.UNISIGNED
         },
-        usuario_id:{
+        usuarioId:{
             type: dataTypes.INTEGER.UNISIGNED,
-            allowNull: false
         },
-        comentarios: {
+        textoComentario: {
             type: dataTypes.INTEGER.UNISIGNED,
-            allowNull: false
         },
     };
     let config = {
