@@ -4,7 +4,7 @@ USE miProyecto;
 CREATE TABLE usuarios (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   email VARCHAR(255) NOT NULL,
-  contraseña VARCHAR(255) NOT NULL,
+  contrasena VARCHAR(255) NOT NULL,
   fechaNacimiento DATE NOT NULL,
   dni INT UNSIGNED NOT NULL,
   fotoPerfil VARCHAR(255),
