@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
 
 const loginRouter = require('./routes/login');
 const mainRouter = require('./routes/main');
@@ -26,6 +27,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({ 
+  secret: "Mensaje secreto",
+  resave: false,
+  saveUninitialized: true})),
 
 app.use('/', mainRouter);
 app.use('/users', usersRouter);
@@ -35,6 +40,7 @@ app.use('/product', productRouter);
 app.use('/profile', profileRouter);
 app.use('/register', registerRouter);
 app.use('/search', searchRouter);
+
 
 app.use(function(req, res, next) {
     next(createError(404));

@@ -4,7 +4,7 @@ const data = {
     {
         email: "juan05@gmail.com",
         usuario: "Juan Antonio Hierro",
-        contraseña:"Perr@123",
+        contrasena:"Perr@123",
         fechaNacimiento:"1992-08-23",
         fotoPerfil: "/images/fotodePerfil.jpg",
     },
