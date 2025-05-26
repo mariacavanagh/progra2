@@ -37,7 +37,7 @@ CREATE TABLE comentarios (
   FOREIGN KEY (productoId) REFERENCES productos(id)
 );
 
--- Insertando usuarios (se eliminó la columna "usuario", que no existía)
+
 INSERT INTO usuarios (email, contraseña, fechaNacimiento, dni, fotoPerfil) VALUES
 ('juan05@gmail.com', 'contraseña2', '1999-04-12', 23456789, 'images/fotodePerfil.jpg'),
 ('ana@gmail.com', 'contraseña1', '1995-05-10', 12345678, 'images/users/anaaaa.jpg'),
@@ -45,7 +45,7 @@ INSERT INTO usuarios (email, contraseña, fechaNacimiento, dni, fotoPerfil) VALU
 ('marcos@gmail.com', 'contraseña4', '1990-03-15', 45678901, '/images/users/marcos.jpg'),
 ('sofia@gmail.com', 'contraseña5', '1997-07-07', 56789012, 'images/users/sofiiaaa.jpg');
 
--- Insertando productos (se corrigieron los nombres de columnas)
+
 INSERT INTO productos (usuarioId, nombreArchivo, nombreProducto, descripcionProducto) VALUES
 (1, 'images/products/img-tv-samsung-smart.jpg','Tv Samsung Smart', 'es muy buena'),
 (2, 'images/products/02dee987-233b-4e0c-8464-b2bc86483fe7.jpg', 'Irobot Roomba', 'Aspirador autómata'),
@@ -58,7 +58,7 @@ INSERT INTO productos (usuarioId, nombreArchivo, nombreProducto, descripcionProd
 (4, 'images/products/samsung-nevera_800x800.jpg', 'Samsung Fridge', 'Heladera inteligente de Samsung con manejo por bluetooth.'),
 (5, 'images/products/ninja_airfryer_800x800.jpg', 'Ninja Airfryer', 'Freidora de aire marca Ninja.');
 
--- Insertando comentarios (se corrigieron nombres de columnas)
+
 INSERT INTO comentarios (productoId, usuarioId, textoComentario) VALUES
 (1, 1, 'Me gustó mucho.'),
 (1, 2, 'Muy útil.'),
