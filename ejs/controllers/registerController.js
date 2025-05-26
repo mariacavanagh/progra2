@@ -1,4 +1,3 @@
-const data = require("../db/database");
 const db = require("../database/models");
 const bcrypt = require("bcryptjs");
 

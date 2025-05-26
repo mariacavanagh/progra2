@@ -15,7 +15,25 @@ const productController= {
             usuario: database.usuario,
             productos: database.productos
         });
-    }};
+    },
+
+    publicarProduct: function(req, res){
+        if(!req.session.usuario){
+            return res.redirect("/login");
+        }
+
+        const {nombre, descripcion} = req.body;
+        const imagen = /*¿?*/ ;
+
+        const nuevoProduct = {
+            nombre,
+            descripcion,
+            imagen
+        }
+        
+        res.redirect('/productos');
+    }
+};
 
 
 
