@@ -46,20 +46,6 @@ app.use(function(req, res, next) {
     next(createError(404));
 });
 
-app.get('/registrarse', (req, res) => {
-    res.render('registracion'); 
-  });
-
-
-
-app.get('/login', (req, res) => {
-res.render('inciSesion'); ;
-});
-
-app.get('/product/add', (req, res) => {
-  res.render('agregarProducto'); 
-});
-
   
   
 // error handler

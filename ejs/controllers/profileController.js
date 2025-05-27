@@ -1,4 +1,4 @@
-const data = require('../db/database');
+const db = require('../database/models');
 
 const profileController= {
     profile: function(req, res) {
