@@ -7,11 +7,11 @@ const searchresultsController= {
     searchresults: function(req, res) {
         const buscar = req.query.search;
 
-        db.Product.findAll({
+        db.Producto.findAll({
             where: {
-                title: { [Op.like]: `%${buscar}%` }
+                nombreProducto: { [Op.like]: `%${buscar}%` }
             },
-            include: [{ model: db.Usuario, as: 'usuario' }]
+            include: [{ model: db.Usuario, as: 'usuarios' }]
         }).then(function(resultados){
             if (resultados.length === 0){
                 return res.render('search-result', {

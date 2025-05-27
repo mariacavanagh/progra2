@@ -23,7 +23,10 @@ module.exports = function(sequelize, dataTypes){
     let config = {
         tableName: "productos",
         timestamps: true,
-        underscored: true
+        underscored: false,
+        define: {
+            freezeTableName: true
+        }
     }
 
     let Producto = sequelize.define(alias, cols, config);
@@ -32,7 +35,7 @@ module.exports = function(sequelize, dataTypes){
 
         Producto.belongsTo(models.Usuario, {
             as: "usuarios",
-            foreignKey: "usuarioId",
+            foreignKey: "usuarioId"
         });
 
         Producto.hasMany(models.Comentario, {
