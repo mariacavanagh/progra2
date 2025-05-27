@@ -4,11 +4,11 @@ module.exports = function(sequelize, dataTypes){
         id: {
             autoIncrement: true,
             primaryKey: true,
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
 
         },
         usuarioId: {
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
         },
         nombreArchivo:{
             type: dataTypes.STRING(255),
@@ -28,9 +28,9 @@ module.exports = function(sequelize, dataTypes){
 
     let Producto = sequelize.define(alias, cols, config);
 
-    Producto.assiociate = function(models) {
+    Producto.associate = function(models) {
 
-        Producto.belongsTo(models.User, {
+        Producto.belongsTo(models.Usuario, {
             as: "usuarios",
             foreignKey: "usuarioId",
         });

@@ -1,21 +1,21 @@
 module.exports = function(sequelize, dataTypes){
-    let alias = "Comentarios";
+    let alias = "Comentario";
     let cols = {
         id: {
             autoIncrement: true,
             primaryKey: true,
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
 
         },
         productoId: {
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
         },
         usuarioId:{
-            type: dataTypes.INTEGER.UNISIGNED,
+            type: dataTypes.INTEGER.UNSIGNED,
         },
         textoComentario: {
-            type: dataTypes.INTEGER.UNISIGNED,
-        },
+            type: dataTypes.STRING,
+        }
     };
     let config = {
         tableName: "comentarios",
@@ -25,14 +25,14 @@ module.exports = function(sequelize, dataTypes){
 
     let Comentario = sequelize.define(alias, cols, config);
 
-    Comentario.assiociate = function(models) {
+    Comentario.associate = function(models) {
 
-        Comentario.belongsTo(models.User, {
+        Comentario.belongsTo(models.Usuario, {
             as: "usuarios",
             foreignKey: "usuarioId",
         });
 
-        Comentario.belongsTo(models.Product, {
+        Comentario.belongsTo(models.Producto, {
             as:"productos",
             foreignKey: "productoId",
         })

@@ -4,7 +4,7 @@ module.exports = function(sequelize, dataTypes){
         id: {
             autoIncrement: true,
             primaryKey: true,
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
 
         },
         email: {
@@ -17,7 +17,7 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.DATE,
         },
         dni: {
-            type: dataTypes.INTEGER.UNISIGNED
+            type: dataTypes.INTEGER.UNSIGNED
         },
         fotoPerfil: {
             type: dataTypes.STRING(255)
@@ -32,7 +32,7 @@ module.exports = function(sequelize, dataTypes){
 
     let Usuario = sequelize.define(alias, cols, config);
 
-    Usuario.assiociate = function(models) {
+    Usuario.associate = function(models) {
 
         Usuario.hasMany(models.Producto, {
             as: "productos",
@@ -41,10 +41,10 @@ module.exports = function(sequelize, dataTypes){
 
         Usuario.hasMany(models.Comentario, {
             as:"comentarios",
-            foreignKey: "productoId",
+            foreignKey: "usuarioId",
         })
 
     }
        
-        return Producto;
+        return Usuario;
 }

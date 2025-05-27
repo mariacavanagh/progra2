@@ -1,4 +1,6 @@
 const database = require('../db/database');
+const db = require('../database/models');
+const bcrypt = require('bcryptjs');
 
 const productController= {
     product: function(req, res) {
@@ -23,7 +25,7 @@ const productController= {
         }
 
         const {nombre, descripcion} = req.body;
-        const imagen = /*¿?*/ ;
+        // const imagen = /*¿?*/ ;
 
         const nuevoProduct = {
             nombre,

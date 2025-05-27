@@ -1,3 +1,7 @@
+const data = require('../db/database');
+const db = require('../database/models');
+const bcrypt = require('bcryptjs');
+
 const loginController={
     login: function(req, res) {
         res.render('login', {title: 'Login'});
@@ -39,6 +43,11 @@ const loginController={
                     contrasena: contrasenaEncriptada
 
                 })
+    },
+    logout: function(req, res){
+        req.session.destroy();
+        res.clearCookie('indicar el nombre de la cookie');
+        return res.redirect('/login');
     }
 }
 
