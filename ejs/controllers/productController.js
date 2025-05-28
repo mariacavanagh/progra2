@@ -24,16 +24,16 @@ const productController= {
             return res.redirect("/login");
         }
 
-        db.product.create({
-            nombre: req.body.usario,
-            descripcion: req.body.usario,
-            imagen: req.file.imagen
-        })
-        
+        db.Product.create({
+            nombre: req.body.nombre,
+            descripcion: req.body.descripcion,
+            imagen: req.file.filename 
+           
+        });
+
         res.redirect('/productos');
     }
 };
-
 
 
 module.exports = productController;
