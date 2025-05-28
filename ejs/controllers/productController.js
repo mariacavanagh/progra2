@@ -24,14 +24,11 @@ const productController= {
             return res.redirect("/login");
         }
 
-        const {nombre, descripcion} = req.body;
-        // const imagen = /*¿?*/ ;
-
-        const nuevoProduct = {
-            nombre,
-            descripcion,
-            imagen
-        }
+        db.product.create({
+            nombre: req.body.usario,
+            descripcion: req.body.usario,
+            imagen: req.file.imagen
+        })
         
         res.redirect('/productos');
     }
