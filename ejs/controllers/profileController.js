@@ -7,18 +7,11 @@ const profileController= {
             
         } 
         db.Usuario.findByPk(req.session.usuarioLogueado.id, {
-            include: [
-                {
-                  association: "productos", 
-                },
-                {
-                  association: "comentarios", 
-                },
-              ]
+            include: [ "productos", "comentarios", ]
             })
         .then(function(usuario){
-            if (!usuario){
-                return res.send('No se ha podido encontrar al usuario')
+            if(!usuario){
+                return res.redirect('/login');
             }
             return res.render('profile', {
                 title:'Profile',
