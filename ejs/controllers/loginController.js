@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 const loginController={
     login: function(req, res) {
         if (req.session.usuarioLogueado){
-            return res.redirect('/perfil');
+            return res.redirect('/profile');
         }else{
             return res.render('login', {title: 'Login'});
         }
@@ -36,7 +36,7 @@ const loginController={
                 res.cookie('recordame', usuario.email, { maxAge: 1000 * 60 * 60 * 5 });
             }
     
-            return res.redirect('/perfil');
+            return res.redirect('/profile');
         });
     },
     logout: function(req, res){

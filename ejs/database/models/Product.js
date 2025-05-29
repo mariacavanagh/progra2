@@ -34,7 +34,7 @@ module.exports = function(sequelize, dataTypes){
     Producto.associate = function(models) {
 
         Producto.belongsTo(models.Usuario, {
-            as: "usuarios",
+            as: "usuario",
             foreignKey: "usuarioId"
         });
 

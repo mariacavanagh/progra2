@@ -20,7 +20,7 @@ module.exports = function(sequelize, dataTypes){
             type: dataTypes.INTEGER.UNSIGNED
         },
         fotoPerfil: {
-            type: dataTypes.STRING(255)
+            type: dataTypes.STRING
         },
 
     };

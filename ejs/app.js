@@ -30,7 +30,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({ 
   secret: "Mensaje secreto",
   resave: false,
-  saveUninitialized: true})),
+  saveUninitialized: true}));
+
+app.use(function(req, res, next) {
+  res.locals.usuarioLogueado = req.session.usuarioLogueado;
+  return next();
+});
 
 app.use('/', mainRouter);
 app.use('/users', usersRouter);
@@ -40,6 +45,7 @@ app.use('/product', productRouter);
 app.use('/profile', profileRouter);
 app.use('/register', registerRouter);
 app.use('/search', searchRouter);
+
 
 
 app.use(function(req, res, next) {

@@ -36,6 +36,22 @@
             </ul>
 
             <ul class="right-navbar">
+                <% if (usuarioLogueado) { %>
+                <li>
+                    <a href="/profile"> Hola, <%= usuarioLogueado.email %> <i class="fas fa-user"></i> </a>
+                </li>
+                <li>
+                    <a href="/product/add">Agregar producto</a>
+                </li>
+                <li>
+                    <form action="/login/logout" method="POST">
+                        <button class="logout" type="submit">
+                          Cerrar sesión <i class="fas fa-sign-in-alt"></i>
+                        </button>
+                      </form>
+                </li>
+                  
+            
             <!-- Estos li deben verse solo si el usuario está logueado 
                 <li> 
                     Nombre del usuario <i class="fas fa-user"></i>
@@ -49,6 +65,7 @@
                 </li>
             -->
                 <!-- Los li con register y loguin deben ocultarse si el usuario está logueado -->
+                <% } else { %>
                 <li>
                     <a href="/register">Creá tu cuenta <i class="far fa-address-card"></i>
                     </a>
@@ -56,6 +73,7 @@
                 <li>
                     <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
                 </li>
+                <% } %>
             </ul>
         </nav>
     </div>

@@ -17,15 +17,15 @@ const registerController = {
         const dni = req.body.dni;
 
         if (!email) {
-            return res.render("register", { error: "El email no puede estar vacío." });
+            return res.send("El email no puede estar vacío.");
         }
 
         if (!contrasena) {
-            return res.render("register", { error: "La contraseña no puede estar vacía." });
+            return res.send("La contraseña no puede estar vacía." );
         }
 
         if (contrasena.length < 3) {
-            return res.render("register", { error: "La contraseña debe tener al menos 3 caracteres." });
+            return res.send("La contraseña debe tener al menos 3 caracteres." );
         }
 
             const contrasenaEncriptada = bcrypt.hashSync(contrasena, 10);
