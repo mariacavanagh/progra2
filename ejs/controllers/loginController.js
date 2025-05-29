@@ -11,7 +11,7 @@ const loginController={
     },
     processLogin: function(req, res){
         const email = req.body.email;
-        const password = req.body.contrasena;
+        const contrasena = req.body.contrasena;
     
         db.Usuario.findOne({ where: { email } })
         .then(function(usuario){
@@ -22,7 +22,7 @@ const loginController={
                 });
             }
     
-            const contrasenaValida = bcrypt.compareSync(password, usuario.contrasena);
+            const contrasenaValida = bcrypt.compareSync(contrasena, usuario.contrasena);
             if (!contrasenaValida) {
                 return res.render('login', {
                     title: 'Login',
