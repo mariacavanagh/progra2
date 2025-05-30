@@ -11,8 +11,9 @@ const searchresultsController= {
             where: {
                 nombreProducto: { [Op.like]: `%${buscar}%` }
             },
-            include: [{ model: db.Usuario, as: 'usuarios' }]
+            include: [{ association: 'usuario' }]
         }).then(function(resultados){
+            console.log("Resultados encontrados:", resultados);
             if (resultados.length === 0){
                 return res.render('search-result', {
                     title: "Sin resultados",

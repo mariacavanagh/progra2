@@ -32,10 +32,14 @@
                                     <p><%= producto.descripcionProducto %></p>
                                     <p>
                                         Subido por: 
-                                        <a href="/profile/<%= producto.usuarios.id %>">
-                                            <%= producto.usuarios.email %>
-                                        </a>
-                                    </p>
+                                        <% if (producto.usuario) { %>
+                                          <a href="/profile/<%= producto.usuario.id %>">
+                                            <%= producto.usuario.email %>
+                                          </a>
+                                        <% } else { %>
+                                          <span>Desconocido</span>
+                                        <% } %>
+                                      </p>
                                 </article>
                             </a>
                         </section>
