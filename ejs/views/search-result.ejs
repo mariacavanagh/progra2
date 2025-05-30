@@ -18,23 +18,34 @@
 			<div class="col-12">
 				<h2 class="products-title">Resultados de búsqueda</h2>
 			</div>
-			<% for (let i = 0; i < productos.length; i++) { %>
-				
-				<div class="col-12 col-sm-6 col-lg-3">
-					<section class="product-box">
-						<a href="/product">
-							<figure class="product-box_image">
-								<img src="<%=productos[i].imagen_producto %>" alt="producto">
-							</figure>
-							<article class="product-box_data">
-								<h2><%= productos[i].nombre %></h2>
-								<p>Descripción: <%= productos[i].descripcion %></p>
-								<p>Comentarios: <%= productos[i].comentarios.length %></p>
-							</article>
-						</a>
-					</section>
-				</div>
-				<% } %>
+			
+            <% if (productos.length > 0) { %>
+                <% productos.forEach(producto => { %>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <section class="product-box">
+                            <a href="/product/<%= producto.id %>">
+                                <figure class="product-box_image">
+                                    <img src="/<%= producto.nombreArchivo %>" alt="<%= producto.nombreProducto %>">
+                                </figure>
+                                <article class="product-box_data">
+                                    <h2><%= producto.nombreProducto %></h2>
+                                    <p><%= producto.descripcionProducto %></p>
+                                    <p>
+                                        Subido por: 
+                                        <a href="/profile/<%= producto.usuarios.id %>">
+                                            <%= producto.usuarios.email %>
+                                        </a>
+                                    </p>
+                                </article>
+                            </a>
+                        </section>
+                    </div>
+                <% }) %>
+            <% } else { %>
+                <div class="col-12">
+                    <p><%= mensaje %></p>
+                </div>
+            <% } %>
 		
 		</div>
 	</div>

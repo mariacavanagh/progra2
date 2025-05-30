@@ -5,8 +5,8 @@ const Op        = Sequelize.Op;
 
 const searchresultsController= {
     searchresults: function(req, res) {
-        const buscar = req.query.search;
-
+        const buscar = req.query.search.toLowerCase().trim();
+        
         db.Producto.findAll({
             where: {
                 nombreProducto: { [Op.like]: `%${buscar}%` }
