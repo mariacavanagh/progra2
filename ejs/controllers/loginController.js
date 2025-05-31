@@ -33,7 +33,7 @@ const loginController={
             req.session.usuarioLogueado = usuario;
     
             if (req.body.recordame != undefined) {
-                res.cookie('recordame', usuario.email, { maxAge: 1000 * 60 * 60 * 5 });
+                res.cookie('recordame', usuario.id, { maxAge: 1000 * 60 * 60 * 5 });
             }
     
             return res.redirect('/profile');

@@ -38,7 +38,7 @@ CREATE TABLE comentarios (
 );
 
 
-INSERT INTO usuarios (email, contraseña, fechaNacimiento, dni, fotoPerfil) VALUES
+INSERT INTO usuarios (email, contrasena, fechaNacimiento, dni, fotoPerfil) VALUES
 ('juan05@gmail.com', 'contraseña2', '1999-04-12', 23456789, 'images/fotodePerfil.jpg'),
 ('ana@gmail.com', 'contraseña1', '1995-05-10', 12345678, 'images/users/anaaaa.jpg'),
 ('luisa@gmail.com', 'contraseña3', '1998-12-01', 34567890, 'images/users/luisa.jpg'),
