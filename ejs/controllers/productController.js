@@ -14,13 +14,17 @@ const productController= {
                 }
             ]
         })
-        .then(producto =>{
-            if (!producto) return res.send("Producto no encontrado");
+        .then(function (producto){
+            if (!producto){
+                return res.send("Producto no encontrado");
+            }
             res.render('product', {
                 product: producto
             });
         })
-        .catch(error => res.send(error))
+        .catch(function(error){
+            return res.send(error);
+        });
     },
     productadd: function(req, res) {
         if (!req.session.usuarioLogueado){
@@ -66,8 +70,14 @@ const productController= {
             usuarioId: usuarioId,
             textoComentario: textoComentario
         })
-        .then(() => res.redirect(`/product/${productoId}`))
-        .catch(error => res.send(error))
+        .then(function() { 
+            return res.redirect(`/product/${productoId}`);
+        })
+        .catch(function(error){
+            console.log(error);
+            return res.send('Hubo un error al registrar el comentario.')
+
+        });
 
     }
 };

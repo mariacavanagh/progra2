@@ -13,28 +13,31 @@
 	<!-- product detail -->
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title"> <%= product.nombre %> </h2> 
+			<h2 class="products-title"> <%= product.nombreProducto %> </h2> 
 			<p class="product-detail-description">
-				<a href="/product/add">Editar</a>
+				<a href="/product/<%= product.id %>">Editar</a>
 			</p>
 		</div>
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="<%= product.imagen %>" alt="" class="product-detail-img">
+					<img src="<%= product.nombreArchivo %>" alt="" class="product-detail-img">
 					<p class="product-detail-description">
-					Descripción: <%= product.descripcion %>	
+					Descripción: <%= product.descripcionProducto %>	
 					</p>
 				</article>
 				<div class="col-12 col-lg-4">
 					<section class="comments">
 						<% for (let i = 0; i < product.comentarios.length; i++) { %>		
 							<article> 
-								<img src="<%=product.comentarios[i].imagen%>" alt="">
 								<div class="data">
 									<p class="user">
-									<strong> <a href="/profile/<%= product.comentarios[i].usuario.id %>"> <%= product.comentarios[i].usuario.id %> </a> </strong>
-									<%= product.comentarios[i].textoComentario %>
+									<strong> <a href="/profile/<%= product.comentarios[i].usuario.id %>">
+										<%= product.comentarios[i].usuario.email %>
+									  </a>
+									  </strong>
+									  <br> 
+									  <%= product.comentarios[i].textoComentario %>
 									</p>
 								</div>
 							</article>
