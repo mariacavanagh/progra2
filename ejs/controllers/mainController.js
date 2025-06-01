@@ -1,4 +1,4 @@
-const database = require("../db/database");
+const db = require("../database/models");
 
 const mainController = {
     index: function(req, res) {

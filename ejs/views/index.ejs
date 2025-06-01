@@ -24,11 +24,10 @@
 					<section class="product-box">
 						<a href="/product/<%= productos[i].id %>">
 							<figure class="product-box_image">
-								<img src="/<%=productos[i].nombreArchivo %>" alt="cafetera moulinex">
-							</figure>
+								<img src="/<%= productos[i].nombreArchivo %>" alt="Imagen del producto">							</figure>
 							<article class="product-box_data">
-								<h2><%= productos[i].nombre %></h2>
-								<p>Descripción: <%= productos[i].descripcion %></p>
+								<h2><%= productos[i].nombreProducto %></h2>
+								<p>Descripción: <%= productos[i].descripcionProducto %></p>
 								<p>Comentarios: <%= productos[i].comentarios.length %></p>
 							</article>
 						</a>
