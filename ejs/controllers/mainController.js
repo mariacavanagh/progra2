@@ -2,9 +2,19 @@ const database = require("../db/database");
 
 const mainController = {
     index: function(req, res) {
-        res.render('index', {
-            title: 'Index',
-            productos: database.productos
+        db.Producto.findAll({
+            include: [
+                {
+                    model: db.Comentario,
+                    as: 'comentarios'
+                }
+            ]
+        })
+        .then(function(productos){
+            res.render('index', {productos:productos});
+        })
+        .catch(function(error){
+            res.send(error);
         });
     }
 }
