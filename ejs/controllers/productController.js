@@ -56,6 +56,13 @@ const productController= {
             usuarioId: usuarioId,
             textoComentario: textoComentario
         })
+        .then(function(nuevoComentario){
+            res.redirect('/product/' + productId);
+        })
+        .catch(function(error){
+            console.log('Error al guardar el comentario', error);
+            res.send('Hubo un error al guardar el comentario.');
+        });
     }
 };
 
