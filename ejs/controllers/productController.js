@@ -41,12 +41,21 @@ const productController= {
             console.log('Error al guardar el producto', error);
             res.send('Hubo un error al guardar el producto.');
         });
-    }
+    },
 
     agregarComentario: function(req,res){
         if (!req.session.usuarioLogueado){
-            eturn res.redirect("/login");
+            return res.redirect("/login");
         }
+        const productoId = req.params.id;
+        const usuarioId = req.session.usuarioLogueado.id;
+        const textoComentario = req.body.textoComentario;
+
+        db.Comentario.create({
+            productoId: productoId,
+            usuarioId: usuarioId,
+            textoComentario: textoComentario
+        })
     }
 };
 
