@@ -42,6 +42,12 @@ const productController= {
             res.send('Hubo un error al guardar el producto.');
         });
     }
+
+    agregarComentario: function(req,res){
+        if (!req.session.usuarioLogueado){
+            eturn res.redirect("/login");
+        }
+    }
 };
 
 
