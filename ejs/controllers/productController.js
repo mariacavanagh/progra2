@@ -57,7 +57,7 @@ const productController= {
             textoComentario: textoComentario
         })
         .then(function(nuevoComentario){
-            res.redirect('/product/' + productId);
+            res.redirect('/product/' + productoÇId);
         })
         .catch(function(error){
             console.log('Error al guardar el comentario', error);
