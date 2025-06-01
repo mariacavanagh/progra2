@@ -4,13 +4,23 @@ const bcrypt = require('bcryptjs');
 
 const productController= {
     product: function(req, res) {
-        const miProducto = database.productos[0];
-
-        res.render('product' , {
-            product: miProducto,
-            usuario: database.usuario
-        });
-         
+        const id = req.params.id;
+        db.Producto.findByPk(id, {
+            include: [
+                {
+                    model: db.Comentario,
+                    as: "comentarios",
+                    include: [{model: db.Usuario, as:"usuario" }]
+                }
+            ]
+        })
+        .then(producto =>{
+            if (!producto) return res.send("Producto no encontrado");
+            res.render('product', {
+                product: producto
+            });
+        })
+        .catch(error => res.send(error))
     },
     productadd: function(req, res) {
         if (!req.session.usuarioLogueado){
@@ -56,13 +66,9 @@ const productController= {
             usuarioId: usuarioId,
             textoComentario: textoComentario
         })
-        .then(function(nuevoComentario){
-            res.redirect('/product/' + productoÇId);
-        })
-        .catch(function(error){
-            console.log('Error al guardar el comentario', error);
-            res.send('Hubo un error al guardar el comentario.');
-        });
+        .then(() => res.redirect(`/product/${productoId}`))
+        .catch(error => res.send(error))
+
     }
 };
 
