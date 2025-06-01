@@ -13,25 +13,34 @@ const productController= {
          
     },
     productadd: function(req, res) {
+        if (!req.session.usuarioLogueado){
+            return res.redirect("/login");
+        }
         res.render('productadd', {
-            usuario: database.usuario,
-            productos: database.productos
+            usuario: req.session.usuarioLogueado,
         });
     },
 
     publicarProduct: function(req, res){
-        if(!req.session.usuario){
+        if(!req.session.usuarioLogueado){
             return res.redirect("/login");
         }
 
-        db.Product.create({
-            nombre: req.body.nombre,
-            descripcion: req.body.descripcion,
-            imagen: req.file.filename 
+        db.Producto.create({
+            usuarioId: req.session.usuarioLogueado.id,
+            nombreArchivo: req.body.nombreArchivo,
+            nombreProducto: req.body.nombreProducto,
+            descripcionProducto: req.body.descripcionProducto
+            
            
+        })
+        .then(function(){
+            res.redirect('/profile');
+        })
+        .catch(function(error){
+            console.log('Error al guardar el producto', error);
+            res.send('Hubo un error al guardar el producto.');
         });
-
-        res.redirect('/productos');
     }
 };
 

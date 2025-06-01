@@ -57,11 +57,11 @@
 				<section class="product-box">
 					<a href="/product">
 						<figure class="product-box_image">
-							<img src="<%=productos[i].imagen %>" alt="cafetera moulinex">
+							<img src="<%=productos[i].nombreArchivo %>" alt="<%= productos[i].nombreProducto %>">
 						</figure>
 						<article class="product-box_data">
-							<h2><%= productos[i].nombre %></h2>
-							<p>Descrpción: <%= productos[i].descripcion %></p>
+							<h2><%= productos[i].nombreProducto %></h2>
+							<p>Descrpción: <%= productos[i].descripcionProducto %></p>
 							<% for (let a = 0; a < productos[i].comentarios.length; a++) { %>
 								<p><%= productos[i].comentarios[a].comentario %></p>
 							<%} %>

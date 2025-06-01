@@ -24,9 +24,6 @@ module.exports = function(sequelize, dataTypes){
         tableName: "productos",
         timestamps: true,
         underscored: false,
-        define: {
-            freezeTableName: true
-        }
     }
 
     let Producto = sequelize.define(alias, cols, config);
