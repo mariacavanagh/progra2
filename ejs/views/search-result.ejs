@@ -20,7 +20,8 @@
 			</div>
 			
             <% if (productos.length > 0) { %>
-                <% productos.forEach(producto => { %>
+                <% for (let i = 0; i < productos.length; i++) { 
+                    const producto = productos[i]; %>
                     <div class="col-12 col-sm-6 col-lg-3">
                         <section class="product-box">
                             <a href="/product/<%= producto.id %>">
@@ -30,23 +31,21 @@
                                 <article class="product-box_data">
                                     <h2><%= producto.nombreProducto %></h2>
                                     <p><%= producto.descripcionProducto %></p>
-                                    
+            
                                     <p>Subido por:
                                         <% if (producto.usuario) { %>
-                                          
                                           <a href="/profile/<%= producto.usuario.id %>">
-                                            <%= producto.usuario.email %>
+                                              <%= producto.usuario.email %>
                                           </a>
-                                        </p>
                                         <% } else { %>
                                           <span>Desconocido</span>
                                         <% } %>
-                                      
+                                    </p>
                                 </article>
                             </a>
                         </section>
                     </div>
-                <% }) %>
+                <% } %>
             <% } else { %>
                 <div class="col-12">
                     <p>No se encontraron resultados para tu búsqueda.</p> 
