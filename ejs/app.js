@@ -13,7 +13,6 @@ const productRouter = require('./routes/product');
 const profileRouter = require('./routes/profile');
 const registerRouter = require('./routes/register');
 const searchRouter = require('./routes/search');
-const recordameMiddleware = require('./middlewares/recordame');
 
 
 var app = express();
@@ -46,7 +45,6 @@ app.use('/product', productRouter);
 app.use('/profile', profileRouter);
 app.use('/register', registerRouter);
 app.use('/search', searchRouter);
-app.use(recordameMiddleware);
 
 
 
