@@ -21,7 +21,7 @@
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="/<%= product.nombreArchivo %>" alt="<%= product.nombreProducto %>" class="product-detail-img">					<p class="product-detail-description">
+					<img src="/images/products/<%= product.nombreArchivo %>" alt="<%= product.nombreProducto %>" class="product-detail-img">					<p class="product-detail-description">
 					Descripción: <%= product.descripcionProducto %>	
 					</p>
 				</article>
@@ -29,7 +29,7 @@
 					<section class="comments">
 						<% for (let i = 0; i < product.comentarios.length; i++) { %>		
 							<article> 
-							<img src="<%= product.comentarios[i].usuario.fotoPerfil %>" alt="">
+								<img src="/images/users/<%= product.comentarios[i].usuario.fotoPerfil %>" alt="Foto de perfil">
 								<div class="data">
 									<p class="user">
 
