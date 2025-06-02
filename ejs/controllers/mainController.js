@@ -1,13 +1,12 @@
+const { Association } = require("sequelize");
 const db = require("../database/models");
 
 const mainController = {
     index: function(req, res) {
         db.Producto.findAll({
             include: [
-                {
-                    model: db.Comentario,
-                    as: 'comentarios'
-                }
+                { association:'comentarios'},
+                { association: 'usuario' }
             ]
         })
         .then(function(productos){
