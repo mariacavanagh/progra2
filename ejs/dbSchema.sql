@@ -47,16 +47,16 @@ INSERT INTO usuarios (email, contrasena, fechaNacimiento, dni, fotoPerfil) VALUE
 
 
 INSERT INTO productos (usuarioId, nombreArchivo, nombreProducto, descripcionProducto) VALUES
-(1, 'images/products/img-tv-samsung-smart.jpg','Tv Samsung Smart', 'es muy buena'),
-(2, 'images/products/02dee987-233b-4e0c-8464-b2bc86483fe7.jpg', 'Irobot Roomba', 'Aspirador autómata'),
-(3, 'images/products/6e13385a-2443-47de-985d-b86fb8063f7b.jpg', 'Magsafe charger', 'Cargador inalámbrico'),
-(4, 'images/products/76e8e952-9a85-4db6-826a-f6f6a604891c.jpg', 'Mouse ergonómico', 'Mouse para largas sesiones en la computadora con la mejor comodidad.'),
-(5, 'images/products/52225ff7-ce12-4587-858e-a85090d931e0.jpg', 'Airpods 3ra generación', 'Auriculares inalámbricos de Apple.'),
-(1, 'images/products/img-macbook-pro-2019.jpg', 'Macbook AirPro', 'Laptop carismática de Apple.'),
-(2, 'images/products/img-samsung-galaxy-s10.jpg', 'Samsung Galaxy', 'Teléfono celular de Samsung con disponibilidad a 5G'),
-(3, 'images/products/lavarropas_2_800x800.jpg', 'Lavarropas Samsung', 'Lavarropas marca Samsung de alta calidad'),
-(4, 'images/products/samsung-nevera_800x800.jpg', 'Samsung Fridge', 'Heladera inteligente de Samsung con manejo por bluetooth.'),
-(5, 'images/products/ninja_airfryer_800x800.jpg', 'Ninja Airfryer', 'Freidora de aire marca Ninja.');
+(1, 'img-tv-samsung-smart.jpg','Tv Samsung Smart', 'es muy buena'),
+(2, '02dee987-233b-4e0c-8464-b2bc86483fe7.jpg', 'Irobot Roomba', 'Aspirador autómata'),
+(3, '6e13385a-2443-47de-985d-b86fb8063f7b.jpg', 'Magsafe charger', 'Cargador inalámbrico'),
+(4, '76e8e952-9a85-4db6-826a-f6f6a604891c.jpg', 'Mouse ergonómico', 'Mouse para largas sesiones en la computadora con la mejor comodidad.'),
+(5, '52225ff7-ce12-4587-858e-a85090d931e0.jpg', 'Airpods 3ra generación', 'Auriculares inalámbricos de Apple.'),
+(1, 'img-macbook-pro-2019.jpg', 'Macbook AirPro', 'Laptop carismática de Apple.'),
+(2, 'img-samsung-galaxy-s10.jpg', 'Samsung Galaxy', 'Teléfono celular de Samsung con disponibilidad a 5G'),
+(3, 'lavarropas_2_800x800.jpg', 'Lavarropas Samsung', 'Lavarropas marca Samsung de alta calidad'),
+(4, 'samsung-nevera_800x800.jpg', 'Samsung Fridge', 'Heladera inteligente de Samsung con manejo por bluetooth.'),
+(5, 'ninja_airfryer_800x800.jpg', 'Ninja Airfryer', 'Freidora de aire marca Ninja.');
 
 
 INSERT INTO comentarios (productoId, usuarioId, textoComentario) VALUES
