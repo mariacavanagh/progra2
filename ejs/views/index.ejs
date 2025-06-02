@@ -36,9 +36,9 @@
 								<p>Comentarios: <%= productos[i].comentarios.length %></p>
 								<p>Subido por:
 									<% if (productos[i].usuario) { %>
-									  <a href="/profile/<%= producto.usuario.id %>">
-										  <%= producto.usuario.email %>
-									  </a>
+										<a href="/profile/<%= productos[i].usuario.id %>">
+										  <%= productos[i].usuario.email %>
+										</a>
 									<% } else { %>
 									  <span>Desconocido</span>
 									<% } %>
