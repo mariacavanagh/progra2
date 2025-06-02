@@ -39,11 +39,11 @@ CREATE TABLE comentarios (
 
 
 INSERT INTO usuarios (email, contrasena, fechaNacimiento, dni, fotoPerfil) VALUES
-('juan05@gmail.com', 'contraseña2', '1999-04-12', 23456789, 'fotodePerfil.jpg'),
-('ana@gmail.com', 'contraseña1', '1995-05-10', 12345678, 'anaaaa.jpg'),
-('luisa@gmail.com', 'contraseña3', '1998-12-01', 34567890, 'luisa.jpg'),
-('marcos@gmail.com', 'contraseña4', '1990-03-15', 45678901, 'marcos.jpg'),
-('sofia@gmail.com', 'contraseña5', '1997-07-07', 56789012, 'sofiiaaa.jpg');
+('juan05@gmail.com', 'contraseña2', '1999-04-12', 23456789, 'images/users/fotodePerfil.jpg'),
+('ana@gmail.com', 'contraseña1', '1995-05-10', 12345678, 'images/users/anaaaa.jpg'),
+('luisa@gmail.com', 'contraseña3', '1998-12-01', 34567890, 'images/users/luisa.jpg'),
+('marcos@gmail.com', 'contraseña4', '1990-03-15', 45678901, 'images/users/marcos.jpg'),
+('sofia@gmail.com', 'contraseña5', '1997-07-07', 56789012, 'images/users/sofiiaaa.jpg');
 
 
 INSERT INTO productos (usuarioId, nombreArchivo, nombreProducto, descripcionProducto) VALUES
