@@ -13,7 +13,7 @@ const data = {
         {
             nombre: "Tv Samsung Smart",
             descripcion: "es muy buena",
-            imagen: "/images/products/img-samsung-galaxy-s10.jpg",
+            imagen: "/images/products/img-tv-samsung-smart.jpg",
             comentarios: [
                 {
                     nombre: "juanHierro",
