@@ -6,7 +6,12 @@
 </head>
 <body>
 	<header>
-		<%- include("partials/header")%>
+		<% if (usuarioLogueado){ %>
+			<%- include("partials/headerLogueado", { usuario: usuarioLogueado }) %>
+		<% } else { %>
+			<%- include("partials/header")%>
+		<% } %>
+		
 	</header>
 	
 		<div class="banner">
