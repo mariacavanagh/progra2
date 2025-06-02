@@ -29,8 +29,10 @@
 					<section class="comments">
 						<% for (let i = 0; i < product.comentarios.length; i++) { %>		
 							<article> 
+							<img src="<%= product.comentarios[i].usuario.fotoPerfil %>" alt="">
 								<div class="data">
 									<p class="user">
+
 									<strong> <a href="/profile/<%= product.comentarios[i].usuario.id %>">
 										<%= product.comentarios[i].usuario.email %>
 									  </a>

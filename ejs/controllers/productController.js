@@ -40,6 +40,8 @@ const productController= {
             return res.redirect("/login");
         }
 
+       
+
         db.Producto.create({
             usuarioId: req.session.usuarioLogueado.id,
             nombreArchivo: req.body.nombreArchivo,
