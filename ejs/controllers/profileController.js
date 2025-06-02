@@ -7,7 +7,13 @@ const profileController= {
             
         } 
         db.Usuario.findByPk(req.session.usuarioLogueado.id, {
-            include: [ "productos", "comentarios" ]
+            include: {association: "productos", 
+                include: [
+                    { association: "comentarios", 
+                        include: ['usuario'] 
+                    }
+                ]
+            } 
             })
         .then(function(usuario){
             if(!usuario){
