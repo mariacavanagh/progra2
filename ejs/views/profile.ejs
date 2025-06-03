@@ -62,9 +62,16 @@
 						<article class="product-box_data">
 							<h2><%= productos[i].nombreProducto %></h2>
 							<p>Descrpción: <%= productos[i].descripcionProducto %></p>
-							 <% for (let a = 0; a < productos[i].comentarios.length; a++) { %>
-								<p><%= productos[i].comentarios[a].comentario %></p>
-							<%} %>
+							<p>Comentarios: <%= productos[i].comentarios.length %></p>
+								<p>Subido por:
+									<% if (productos[i].usuario) { %>
+										<a href="/profile/<%= productos[i].usuario.id %>">
+										  <%= productos[i].usuario.email %>
+										</a>
+									<% } else { %>
+									  <span>TU</span>
+									<% } %>
+								</p>
 						</article>
 					</a>
 				</section>

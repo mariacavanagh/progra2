@@ -35,15 +35,17 @@ const profileController= {
         const idUsuario = req.params.id;
     
         db.Usuario.findByPk(idUsuario, {
-          include: [
-              {
-                  association: 'productos',
-                  include: [{
-                      association: 'comentarios',
-                      include: ['usuario'] 
-                  }]
-              },
-          ]
+            include: [
+                {
+                    association: 'productos',
+                    include: ['usuario', 
+                        {
+                            association: 'comentarios',
+                            include: ['usuario'] 
+                        }
+                    ]
+                },
+            ]
         })
         .then(function(usuario) {
           if (!usuario) {
